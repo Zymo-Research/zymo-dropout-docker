@@ -8,5 +8,5 @@ RUN apt-get update && apt-get install -y \
     rm -rf /var/lib/apt/lists/* && \
     apt-get autoremove -y
 
-VOLUME ["/usr/share/dropout-report", "/mnt"]
+VOLUME /usr/share/dropout-report
 WORKDIR /usr/share/dropout-report
