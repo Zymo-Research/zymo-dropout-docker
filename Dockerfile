@@ -9,4 +9,4 @@ RUN apt-get update && apt-get install -y \
     apt-get autoremove -y
 
 VOLUME /usr/share/dropout-report
-WORKDIR /usr/share/dropout-report
+ENTRYPOINT ["python", "/usr/share/dropout-report/dropout_pipeline.py", "-u"]
